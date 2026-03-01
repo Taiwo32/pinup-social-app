@@ -1,4 +1,4 @@
-import {createAsyncThunk, createSlice} from '@reduxjs/toolkit'
+import {createAsyncThunk, createSlice,} from '@reduxjs/toolkit'
 import api from '../../api/axios'
 
 const initialState = {
@@ -10,7 +10,7 @@ const initialState = {
 
 export const fetchConnections = createAsyncThunk('connections/fetchConnections',
     async (token) =>{
-        const {data} = await api.post('/api/user/connections', {
+        const {data} = await api.get('/api/user/connections', {
             headers: {
                 Authorization: `Bearer ${token}`
             }

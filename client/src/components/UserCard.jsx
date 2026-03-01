@@ -10,6 +10,7 @@ import toast from 'react-hot-toast'
 
 
 const UserCard = ({ user }) => {
+    
     const currentUser = useSelector((state) => state.user.value);
 
     const { getToken } = useAuth()

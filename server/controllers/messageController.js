@@ -65,7 +65,7 @@ export const sendMessage = async (req,res) => {
             media_url,
         })
 
-        res.json({ success: true, message: 'Message sent successfully' });
+        res.json({ success: true, message });
 
         // send message to_user_id using SSE
 
