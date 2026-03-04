@@ -88,7 +88,7 @@ const StoryModel = ({setShowModel, fetchStories}) => {
     }
   return (
     <div className='fixed inset-0 z-10 min-h-screen bg-black/80 backdrop-blur text-white flex items-center justify-center p-4  '>
-        <div className=' ml-60 w-full max-w-md'>
+        <div className=' w-full max-w-md'>
             <div className='text-center mb-4 flex items-center justify-baseline'>
                 <button onClick={()=>setShowModel(false)} className='text-white p-2 cursor-pointer'>
                     <ArrowLeft />
